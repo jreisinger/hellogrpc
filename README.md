@@ -67,7 +67,7 @@ Step 7: Run the server.
 ```
 go mod tidy
 
-go run .
+go run server.go
 ```
 
 Step 8: Test the server with [bloomrpc](https://github.com/bloomrpc/bloomrpc) GUI client.
