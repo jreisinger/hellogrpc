@@ -10,7 +10,7 @@ Main usage scenarios
 Core features
 * idiomatic client libraries in 11 languages
 * highly efficient on wire and with a simple service definition framework
-* bi-derectional streaming with http/2 based transport
+* bi-directional streaming with http/2 based transport
 * pluggable auth, tracing, loadbalancing and health checking
 
 Used by: Square, Netflix, CoreOS, Cockroach Labs, Cisco, Juniper
@@ -20,7 +20,7 @@ Used by: Square, Netflix, CoreOS, Cockroach Labs, Cisco, Juniper
 ![](https://grpc.io/img/landing-2.svg)
 
 Service
-* method1 (with parameters and returns types)
+* method1 (with parameters and return types)
 * method2
 * ...
 
@@ -35,7 +35,7 @@ Client
 
 By default, gRPC uses Protocol Buffers, Google's open source mechanism for serializing structured data. You define the structure for the data in `.proto` text files. Then you use the protocol buffer compiler `protoc` to generate data access classes in your preferred language(s).
 
-The recomended version to use is proto3.
+The recommended version to use is proto3.
 
 # Steps to write gRPC program in Go
 
@@ -66,6 +66,7 @@ protoc --go_out=. --go_opt=paths=source_relative \
 Step 7: Run the server.
 ```
 go mod tidy
+
 go run .
 ```
 
