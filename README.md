@@ -58,7 +58,7 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 export PATH="$PATH:$(go env GOPATH)/bin"
 ```
 
-Step 4: Compile `hello.proto` into Go code (hello_grpc.pb.go, hello.pb.go).
+Step 3: Compile `hello.proto` into Go code (hello_grpc.pb.go, hello.pb.go).
 ```
 protoc --go_out=. --go_opt=paths=source_relative \
   --go-grpc_out=. --go-grpc_opt=paths=source_relative \

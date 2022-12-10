@@ -1,4 +1,4 @@
-// Step 3: Create protocol file defining the service.
+// Step 2: Create protocol file defining the service.
 syntax = "proto3";
 
 option go_package = "./hello";

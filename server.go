@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-// Step 5: Create the gRPC server by implementing the HelloServer interface from hello_grpc.pb.go.
+// Step 4: Create the gRPC server by implementing the HelloServer interface from hello_grpc.pb.go.
 type Server struct {
 	hello.UnimplementedHelloServer
 }
@@ -19,13 +19,13 @@ func (s *Server) SayHello(ctx context.Context, in *hello.HelloRequest) (*hello.H
 }
 
 func main() {
-	// Step 2: Listen on a TCP port.
+	// Step 5: Listen on a TCP port.
 	ln, err := net.Listen("tcp", ":9000")
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
-	// Step 6: Start the gRPC server on a TCP port.
+	// Step 6: Start the gRPC server on the listening TCP port.
 	s := grpc.NewServer()
 	hello.RegisterHelloServer(s, &Server{})
 	if err := s.Serve(ln); err != nil {
