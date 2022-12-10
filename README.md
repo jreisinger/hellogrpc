@@ -71,3 +71,5 @@ go run .
 ```
 
 Step 8: Test the server with [bloomrpc](https://github.com/bloomrpc/bloomrpc) GUI client.
+
+See https://grpc.io/docs/languages/go/basics/ for more.
