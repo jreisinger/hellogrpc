@@ -2,7 +2,7 @@ Hellogrpc is a "hello world" program using gRPC.
 
 # gRPC
 
-gRPC is an open source Remote Procedure Call (RPC) framework by Google. RPC is an inter-process communication (IPC) technique in networked (distributed) computing. Remote procedure call is when a program calls a procedure (subroutine, function) to execute in a different address space, commonly on another computer, as if it were a normal local procedure call. Without the programmer explicitly coding the details for the remote interaction. 
+gRPC is an open source Remote Procedure Call (RPC) framework by Google. RPC is an inter-process communication (IPC) technique in networked (distributed) computing. Remote procedure call is when a program calls a procedure (subroutine, function) to execute in a different address space, commonly on another computer, as if it were a normal (local) procedure call. And the programmer doesn't have to explicitly code the details for the remote interaction. 
 
 Main usage scenarios
 * efficiently connecting polyglot services in microservices style architecture
