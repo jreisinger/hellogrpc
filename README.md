@@ -1,5 +1,7 @@
 Hellogrpc is a "hello world" program using gRPC.
 
+# gRPC
+
 gRPC is an open source Remote Procedure Call (RPC) framework by Google. RPC is an inter-process communication (IPC) technique in networked (distributed) computing. Remote procedure call is when a program calls a procedure (subroutine, function) to execute in a different address space, commonly on another computer, as if it were a normal local procedure call. Without the programmer explicitly coding the details for the remote interaction. 
 
 Main usage scenarios
@@ -15,7 +17,7 @@ Core features
 
 Used by: Square, Netflix, CoreOS, Cockroach Labs, Cisco, Juniper
 
-# Components
+# gRPC Components
 
 ![](https://grpc.io/img/landing-2.svg)
 
@@ -73,5 +75,7 @@ go run server.go
 Step 8: Test the server with [bloomrpc](https://github.com/bloomrpc/bloomrpc) GUI client.
 
 <img width="1092" alt="image" src="https://user-images.githubusercontent.com/1047259/206861342-9aa44c8d-29b3-4e69-8880-903a126eaa14.png">
+
+---
 
 See https://grpc.io/docs/languages/go/basics/ for more.
